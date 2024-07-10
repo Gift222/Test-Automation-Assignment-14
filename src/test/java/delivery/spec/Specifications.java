@@ -6,7 +6,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class Specifications {
 
-    public static RequestSpecification getAuthenticatedRequestSpecification(String bearerToken){
+    public static RequestSpecification getAuthenticatedRequestSpecification(String bearerToken) {
         RequestSpecBuilder builder = new RequestSpecBuilder();
         builder.setContentType(ContentType.JSON);
         builder.addHeader("Authorization", "Bearer " + bearerToken);

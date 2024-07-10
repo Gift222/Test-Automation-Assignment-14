@@ -48,7 +48,7 @@ public class ApiClient extends BaseSetupApi {
                 .spec(spec)
                 .log()
                 .all()
-                .delete("orders/" +orderId)
+                .delete("orders/" + orderId)
                 .then()
                 .log()
                 .all()

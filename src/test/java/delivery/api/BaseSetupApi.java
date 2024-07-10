@@ -1,15 +1,12 @@
 package delivery.api;
 
+import delivery.utils.ApiClient;
 import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.http.ContentType;
-import io.restassured.specification.RequestSpecification;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import delivery.utils.ApiClient;
 import org.junit.jupiter.api.BeforeEach;
 
 public class BaseSetupApi {
@@ -35,7 +32,7 @@ public class BaseSetupApi {
     }
 
     @AfterEach
-    public void afterTest(){
+    public void afterTest() {
         softly.assertAll();
     }
 

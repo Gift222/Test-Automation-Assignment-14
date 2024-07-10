@@ -1,4 +1,5 @@
 package delivery.dto;
+
 public class LoginDto {
 
     String username;
